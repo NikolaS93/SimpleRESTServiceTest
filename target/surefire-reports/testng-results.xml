@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-25T18:08:46 CEST" name="Command line suite" finished-at="2022-07-25T18:08:47 CEST" duration-ms="1752">
+    <groups>
+    </groups>
+    <test started-at="2022-07-25T18:08:46 CEST" name="Command line test" finished-at="2022-07-25T18:08:47 CEST" duration-ms="1752">
+      <class name="ServiceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ServiceTest@2641e737]" started-at="2022-07-25T18:08:46 CEST" name="setUp" finished-at="2022-07-25T18:08:46 CEST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGETMetadata()[pri:0, instance:ServiceTest@2641e737]" started-at="2022-07-25T18:08:46 CEST" name="testGETMetadata" finished-at="2022-07-25T18:08:47 CEST" duration-ms="895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGETMetadata -->
+        <test-method signature="testGETMetadataProperty()[pri:0, instance:ServiceTest@2641e737]" started-at="2022-07-25T18:08:47 CEST" name="testGETMetadataProperty" finished-at="2022-07-25T18:08:47 CEST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGETMetadataProperty -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ServiceTest@2641e737]" started-at="2022-07-25T18:08:47 CEST" name="setUp" finished-at="2022-07-25T18:08:47 CEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ServiceTest@2641e737]" started-at="2022-07-25T18:08:47 CEST" name="setUp" finished-at="2022-07-25T18:08:47 CEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPOSTQuery()[pri:0, instance:ServiceTest@2641e737]" started-at="2022-07-25T18:08:47 CEST" name="testPOSTQuery" finished-at="2022-07-25T18:08:47 CEST" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPOSTQuery -->
+      </class> <!-- ServiceTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
