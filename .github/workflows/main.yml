@@ -1,4 +1,3 @@
-# This is a basic workflow to help you get started with Actions
 
 name: CI
 
@@ -17,7 +16,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 
 # This workflow contains a single job called "build"
@@ -35,11 +33,11 @@ jobs:
           java-version: '16.0.2'
           distribution: 'adopt'
         - name: Set up Maven
-            uses: stCarolas/setup-maven@v4.4
+            uses: aahmed-se/setup-maven@v3
             with:
-              maven-version: 3.8.2
-          - name: Run Test project with Maven
-            run: mvn clean test
+              maven-version: 3.6.1
+        - name: Run Test project with Maven
+          run: mvn clean test
 
   nightly:
     runs-on: ubuntu-latest

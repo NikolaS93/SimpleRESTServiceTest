@@ -1,18 +1,20 @@
 package models;
 
+import java.lang.reflect.Array;
+import java.util.List;
 import java.util.Map;
 
 public class Coin {
 
     private int sequenceNumber;
     private String value;
-    //private Map<String, String> signatures;
-    private Object signatures;
+
+    private Signature[] signatures;
 
     public Coin() {
     }
 
-    public Coin(int sequenceNumber, String value, Object signatures) {
+    public Coin(int sequenceNumber, String value,  Signature[] signatures) {
         this.sequenceNumber = sequenceNumber;
         this.value = value;
         this.signatures = signatures;
@@ -34,19 +36,11 @@ public class Coin {
         this.value = value;
     }
 
-//    public Map<String, String> getSignatures() {
-//        return signatures;
-//    }
-//
-//    public void setSignatures(Map<String, String> signatures) {
-//        this.signatures = signatures;
-//    }
-
-        public Object getSignatures() {
+        public Signature[] getSignatures() {
         return signatures;
     }
 
-    public void setSignatures(Object signatures) {
+    public void setSignatures(Signature[] signatures) {
         this.signatures = signatures;
     }
 
