@@ -1,5 +1,5 @@
 
-name: CI
+name: CI - Java
 
 on:
 
@@ -22,7 +22,8 @@ jobs:
         with:
           java-version: '16'
           distribution: 'adopt'
-      - name: Build with Maven
+          cache: maven
+      - name: Run Test project with Maven
         run: mvn clean test
 
 
