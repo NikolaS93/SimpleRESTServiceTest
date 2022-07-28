@@ -11,6 +11,7 @@ on:
   workflow_dispatch:
 
 
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,7 +23,11 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Build with Maven
+      - name: Set up Maven
+        uses: aahmed-se/setup-maven@v3
+        with:
+          maven-version: 3.6.1
+      - name: Run Test project with Maven
         run: mvn clean test
 
 
