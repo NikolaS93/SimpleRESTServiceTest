@@ -1,8 +1,5 @@
 package models;
 
-import java.lang.reflect.Array;
-import java.util.List;
-import java.util.Map;
 
 public class Coin {
 
@@ -38,10 +35,6 @@ public class Coin {
 
         public Signature[] getSignatures() {
         return signatures;
-    }
-
-    public void setSignatures(Signature[] signatures) {
-        this.signatures = signatures;
     }
 
 }
