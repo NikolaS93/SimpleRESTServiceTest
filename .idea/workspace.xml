@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca3c7d72-4f20-4392-983d-13f35fae605b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,17 +51,7 @@
     "settings.editor.selected.configurable": "orchideLicense"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="TestServerMock.getMetadata" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SimpleRESTServiceTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestServerMock" />
-      <option name="METHOD_NAME" value="getMetadata" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestServerMock.getMetadata">
     <configuration name="TestServerMock.getMetadataProperty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SimpleRESTServiceTest" />
       <option name="PACKAGE_NAME" value="" />
@@ -91,11 +82,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.testPOSTQuery" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServerMock.getMetadata" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SimpleRESTServiceTest" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ServiceTest" />
-      <option name="METHOD_NAME" value="testPOSTQuery" />
+      <option name="MAIN_CLASS_NAME" value="TestServerMock" />
+      <option name="METHOD_NAME" value="getMetadata" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServerMock.postQuery" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SimpleRESTServiceTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestServerMock" />
+      <option name="METHOD_NAME" value="postQuery" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -105,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestServerMock.getMetadata" />
+        <item itemvalue="TestNG.TestServerMock.postQuery" />
         <item itemvalue="JUnit.TestServerMock.getMetadataPropertyDeserialized" />
         <item itemvalue="JUnit.TestServerMock.getQuery" />
         <item itemvalue="JUnit.TestServerMock.getMetadataProperty" />
-        <item itemvalue="JUnit.TestServerMock.getMetadata" />
-        <item itemvalue="TestNG.ServiceTest.testPOSTQuery" />
       </list>
     </recent_temporary>
   </component>
