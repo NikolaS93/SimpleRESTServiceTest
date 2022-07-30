@@ -8,6 +8,8 @@ public class Coin {
 
     private Signature[] signatures;
 
+    private String anSignatures; //property key from README.md
+
     public Coin() {
     }
 
@@ -33,8 +35,10 @@ public class Coin {
         this.value = value;
     }
 
-        public Signature[] getSignatures() {
+    public Signature[] getSignatures() {
         return signatures;
     }
+
+    public String getAnSignatures() { return anSignatures; }
 
 }
