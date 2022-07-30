@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca3c7d72-4f20-4392-983d-13f35fae605b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Coin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Coin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestServerMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestServerMock.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,24 +52,12 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;orchideLicense&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.TestServerMock.postQuerySubjects">
+  <component name="RunManager" selected="TestNG.TestServerMock.getMetadataVerifyProperties">
     <configuration name="TestServerMock" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SimpleRESTServiceTest" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestServerMock" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestServerMock.getMetadata" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SimpleRESTServiceTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestServerMock" />
-      <option name="METHOD_NAME" value="getMetadata" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -114,13 +100,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestServerMock.postQuerySubjectsProperties" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SimpleRESTServiceTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestServerMock" />
+      <option name="METHOD_NAME" value="postQuerySubjectsProperties" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestServerMock.getMetadataVerifyProperties" />
+        <item itemvalue="TestNG.TestServerMock.postQuerySubjectsProperties" />
         <item itemvalue="TestNG.TestServerMock.postQuerySubjects" />
         <item itemvalue="TestNG.TestServerMock" />
         <item itemvalue="TestNG.TestServerMock.postQuery" />
-        <item itemvalue="TestNG.TestServerMock.getMetadataVerifyProperties" />
-        <item itemvalue="TestNG.TestServerMock.getMetadata" />
       </list>
     </recent_temporary>
   </component>
@@ -153,6 +151,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/TestServerMock.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="actualCoin.signatures[0]" />

@@ -1,13 +1,10 @@
-import io.restassured.http.ContentType;
 import models.Coin;
 import models.Signature;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +17,7 @@ public class TestServerMock {
     public final String signature = "2bf86524f8cb8dff2d06ea291cccb6bd69cd31499d64eac5d661245d6c68ebe047515f0e119ddf08848d20e7b898dda59b1369bcb1dc59210049c76d00db9f04";
     public final String publicKey = "9b3c4095df24e08599115c750988b0a105043cd15b6521a123f21d7b92369a73";
     public final String subject = "2048c7e09308f9138cef8f1a81733b72e601d016eea5eef759ff2933416d617a696e67436f696e";
-    public final String subjectTwo = "919e8a1922aaa764b1d66407c6f62244e77081215f385b60a62091494861707079436f696e";
+    public final String subject2 = "919e8a1922aaa764b1d66407c6f62244e77081215f385b60a62091494861707079436f696e";
 
 
     @Test
@@ -30,13 +27,12 @@ public class TestServerMock {
 
         ArrayList<String> subjects = new ArrayList<>();
 
-        subjects.add(subjectTwo);
         subjects.add(subject);
+        subjects.add(subject2);
 
         Map<String, ArrayList<String>> params = new HashMap<>();
         params.put("subjects", subjects);
 
-        System.out.println(params);
 
         RestAssured.
                 given().
@@ -57,8 +53,8 @@ public class TestServerMock {
         ArrayList<String> subjects = new ArrayList<>();
         ArrayList<String> properties = new ArrayList<>();
 
-        subjects.add(subjectTwo);
         subjects.add(subject);
+        subjects.add(subject2);
 
         properties.add("name");
         properties.add("description");
@@ -68,17 +64,22 @@ public class TestServerMock {
         params.put("subjects", subjects);
         params.put("properties", properties);
 
-        System.out.println(params);
 
         RestAssured.
                 given().
                 body(params).
                 when().
                 post(baseURI + endpoint).
-                then().log().body().
-                assertThat().statusCode(200).
-                body("subjects.subject", equalTo(subjects));
-
+                then().
+                assertThat().statusCode(200).log().body().
+                body(
+                        "subjects.subject", equalTo(subjects),
+                        "subjects.name", notNullValue(),
+                        "subjects.url", notNullValue(),
+                        "subjects.description", notNullValue(),
+                        "subjects.decimals", nullValue(),
+                        "subjects.policy", nullValue()
+                );
     }
 
     @Test
@@ -128,5 +129,6 @@ public class TestServerMock {
         assertThat(actualCoin.getValue(), equalTo(expectedCoin.getValue()));
 
     }
+
 
 }
